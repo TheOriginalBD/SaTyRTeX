@@ -4,145 +4,223 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[danish]{babel}
+\usepackage{textcomp}
+\usepackage{lscape}
+\usepackage[a4paper]{geometry}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
 
 \revyname{SatyrRevy}
 \revyyear{2014}
 % HUSK AT OPDATERE VERSIONSNUMMER
-\version{0.1}
+\version{2.0}
 \eta{$n$ minutter}
 \status{Ikke færdig}
-\responsible{En revyst}
+\responsible{Asger}
 
 \title{Supermario}
-\author{en forfatter (som ikke kan \TeX'e)}
+%\author{en forfatter (som ikke kan \TeX'e)}
 
 \begin{document}
 \maketitle
 
 \begin{roles}
-    \role{M}[Freja] Mario
-    \role{FB}[Sara] Fuld biokemiker
-    \role{N}[Asger]  Ninja
-    \role{N}[Ejnar]  Ninja
-    \role{N}[Jakob]  Ninja
-    \role{N}[Julie]  Ninja
-    \role{N}[Spectrum]  Ninja
-    \role{N}[Heine]  Ninja
-    \role{N}[Steen]  Ninja
-    \role{N}[Nine]  Ninja
+    \role{M}[Freja]  Mario
+    \role{GL}[Sara]  Green Lighthouse
+    \role{C}[Steen]  Censor
+    \role{L1}[Asger]  Løfter 1
+    \role{L2}[Ejnar]  Løfter 2
+    \role{N1}[Valdbjørn]  Ninja 1
+    \role{N2}[Nine]  Ninja 2
+    \role{N3}[Julie]  Ninja 3
+    \role{N4}[Spectrum]  Ninja 4
+    \role{N5}[Heine]  Ninja 5
     \role{I}[Olivia]  Instruktør
 \end{roles}
 
 \begin{props}
-    \prop{Sort skærm}[Person, der skaffer] Mario bevæger sig foran skærmen, ninjaerne bevæger sig bagved
-    \prop{ECTS skilte*N}[Person, der skaffer] (sort bagside)
-    \prop{Sky skilt}
-    \prop{Busk skilt}
-    \prop{Henrik skilt} En stor og grim busk
-    \prop{Pause skilt}
-    \prop{Speciale}
-    \prop{Ildkugle skilt} Sort bagside
-    \prop{Rør} Grønt pap hvor der står Green Lighthouse på og en person kan gemme sig bag.
-    \prop{Stof-rør*3 med skilt} Et "Valgfag" skilt, et "Protein Science" skilt, et "Noget på KUA" skilt.
-    \prop{Goomba der står aflevering*n} Sort bagside
-    \prop{Sort rullebræt} Til fuld biokemiker
-    \prop{"?" bokse*N}
-    \prop{Murstens-boks} Samme størrelse som "?"boks
-    \prop{Kaffekop skilt} Mindre end "?" boks
-    \prop{GT skilt} Mindre end "?" boks
-    \prop{Taburet}
+    \prop{Stor, sort skærm} Mario bevæger sig foran skærmen, ninjaerne bevæger sig bagved.
+    \prop{Buske}4 grønne buske med sort bagside og evt. hank.
+    \prop{Skyer} 4 hvide skyer med sort bagside og evt. hank.
+    \prop{ECTS} 4 runde, gule ECTS-skilte med sort bagside på sorte pinde.
+    \prop{Mange-ECTS} 4x2 (fire dobbeltpinde) med mange ECTS på.
+    \prop{Opgaver} 2 stk. opgaver med Goomba-træk.
+    \prop{?-boks} 1 stk. på pind.
+    \prop{3D-rør} 2 stk. grønne rør som Mario kan hoppe ned i.
+    \prop{2D-rør, liggende} 1 stk. grønt rør.
+    \prop{2D-rør, loft} 1 stk. med skriften "KUA".
+    \prop{Skilte, der skal kunne hænge på 3D-rør} 3 stk.: "Green Lighthouse", "Protein Science" og "Noget på KUA".
+    \prop{Mursten} 1 stk., lille (en enkelt mælkekasse).
+    \prop{Kaffekop} 1 stk. i pap.
+    \prop{Pibe} 1 stk., i pap og pixelleret.
+    \prop{Pauseskilt} 1 stk., sort baggrund med hvid, pixelleret skrift.
+    \prop{GAME OVER-skilt} 1 stk., stort, sort, med hvid, pixelleret skrift.
+    \prop{Bowser/Speciale} 1 stk. stor Bowser/Speciale hybrid.
+    \prop{Ildkugle} Stor ildkugle i pap med sort bagside (på pind).
+    \prop{Pigvæg/Fremdriftsreform} Stor.
+    \prop{Guldtuborg} 1 stk. ægte, meget tømt.
 \end{props}
-
 
 \begin{sketch}
 
+NOTE: En gul markering i første skema betyder "løft".
+
 
 \scene{Lys op.}
-\scene{Mario er midt på scenen, stor. Bagved er sort skærm. Mario løber på stedet, ninjaer er bag den sorte skærm. Mario musik spiller.}
+\scene{Mario er midt på scenen, stor. Bagved er sort skærm. Mario går på stedet, ninjaer er bag den sorte skærm og kommer frem i højre side i nedenstående rækkefølge. Mariomusik og -lyde spiller.}
 
-\act{Skilte: Busk, Sky, ECTS}
+%HER BEGYNDER DEN NYE DEL, TEX'ET AF OLIVIA
+\newgeometry{left = 1.5cm, bottom = 3cm}
+\begin{landscape}
+\begin{table}
+  \label{Individuelle}
 
-\act{Mario hopper for at få ECTS, ECTS skilt vendes}
+\begin{tabular}{l||p{2.7cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}|}
+    &    \cellcolor[gray]{0.9} \textbf{N1}     &  \cellcolor[gray]{0.9} \textbf{N2}  &      \cellcolor[gray]{0.9} \textbf{N3}       &    \cellcolor[gray]{0.9} \textbf{N4}    &       \cellcolor[gray]{0.9} \textbf{N5}        &             \cellcolor[gray]{0.9} \textbf{GL}              &   \cellcolor[gray]{0.9} \textbf{C}   \\
+    & \cellcolor[gray]{0.9} \textbf{Valdbjørn} & \cellcolor[gray]{0.9} \textbf{Nine} &     \cellcolor[gray]{0.9} \textbf{Julie}     & \cellcolor[gray]{0.9} \textbf{Spectrum} &      \cellcolor[gray]{0.9} \textbf{Heine}      &            \cellcolor[gray]{0.9} \textbf{Sara}             & \cellcolor[gray]{0.9} \textbf{Steen} \\ \hline \hline
 
-\act{Aflevering goomba skilt kommer ind, Mario hopper på goomba, skilt vendes}
+  \cellcolor[gray]{0.9} 1 &   Busk    & Sky  & ECTS (enkelt) &  \cellcolor{yellow} Opgave  & ?-boks med ECTS & \cellcolor{yellow} 3D-rør ("Green Lighthouse") & \\ \hline
 
-\act{Skilte:}
+  \cellcolor[gray]{0.9} 2 &   Busk (+ baglæns)    & ECTS (enkelt) (+ baglæns)  & & & & & Gør Mario lille \\ \hline
 
-\act{"?" box, Mario hopper, hver gang han rammer boxen popper et ECTS skilt op}
+  \cellcolor[gray]{0.9} 3 & & & Sky & \cellcolor{yellow} ECTS (enkelt) højt & Mursten & & \\ \hline
 
-\scene{Lys blinker mens Mario hopper, mønt lyd fra Mario når ECTS popper op}
+  \cellcolor[gray]{0.9} 4 & ?-kasse + kaffekop & & & & & & \cellcolor{yellow} Hoppes på af Mario \\ \hline
 
-\act{Skilte: Sky, Henrik}
+  \cellcolor[gray]{0.9} 5 & & Pause-skilt & & & Hiv Censor ud & & \\ \hline
 
-\act{Green Lighthouse rør, Asger kommer op af røret, Mario hopper over}
+  \cellcolor[gray]{0.9} 6 & Hiv Censor ud & & \cellcolor{yellow} 3D-rør ("Protein Science") & \cellcolor{yellow} 3D-rør ("Noget på KUA") & & Klar til at give Mario piben & \\ \hline
 
-\act{Skilte: ECTS, mario kan ikke hoppe højt nok for at nå pointet – prøver to gange}
+  \cellcolor[gray]{0.9} 7 & & & & & \cellcolor{yellow} Loftsrør ("KUA") & & \\ \hline
 
-\act{Aflevering goomba skilt kommer ind, Mario hopper på goomba, skilt vendes}
+  \cellcolor[gray]{0.9} 8 & 2 x ECTS (mange) & 2 x ECTS (mange) & 2D-rør & & & & \\ \hline
 
-\act{"?"boks i luften, murstens-boks med taburet bagved på jorden}
+  \cellcolor[gray]{0.9} 9 & & & & \cellcolor{yellow} 3D-rør med trin IND og UD & Sky & & \\ \hline
 
-\act{Mario hopper op på murstens-boksen (står på taburetten)}
+  \cellcolor[gray]{0.9} 10 & ?-boks med Guldtuborg & & & & & Klar til at tage GT og give Valdbjørn ECTS & \\ \hline
 
-\act{Mario hopper, to ninjaer griber ham, så det ligner han er midt i et hop, pause skilt}
+  \cellcolor[gray]{0.9} 11 & & 2 x ECTS (enkelt i hver hånd) & 2 x Busk & 2 x Sky & Opgave & & \\ \hline
 
-\scene{Musikken stopper når Mario gribes}
+  \cellcolor[gray]{0.9} 12 & ?-boks med ECTS & 2 x ECTS (enkelt i hver hånd) & 2 x Busk & & & & \\ \hline
 
-\scene{Musikken starter igen}
+  \cellcolor[gray]{0.9} 13 & & & & Sky & Busk & & \\ \hline
 
-\act{Pause skilt væk, Mario hopper op i "?"boks}
+  \cellcolor[gray]{0.9} 14 & Bowser & \cellcolor{yellow} Ildkugle & & Fremdriftsreform (venstre) & Fremdriftsreform (venstre) & & \\ \hline
 
-\act{Kaffekop popper frem fra "?" boks, Mario fanger kaffekop (skilt vendes) og bliver stor}
+  \cellcolor[gray]{0.9} 15 & & & GAME OVER-skilt & & & & \\ \hline
 
-\act{Skilte: Sky, busk}
+\end{tabular}
+\end{table}
+\end{landscape}
+\restoregeometry
 
-\act{Fuld biokemiker kravler ind – mario hopper på den}
+\begin{longtable}{|l||p{2cm}|p{3cm}|p{6.5cm}|p{1.3cm}|}
+  \hline
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \textbf{Ninja} & \cellcolor[gray]{0.9} \textbf{Rekvisit} & \cellcolor[gray]{0.9} \textbf{Handling} & \cellcolor[gray]{0.9} \textbf{Løft} \\ \hline \hline
 
-\act{Fuld biokemiker vælter om på ryggen og køres ud på rullebrættet}
+  1 & Valdbjørn & Busk & & \\ \hline
 
-\act{Skilt: Goomba, rammes af biokemiker og vendes}
+  2 & Nine & Sky & & \\ \hline
 
-\act{Skilte: ECTS, ECTS}
+  3 & Julie & ECTS (enkelt) & ECTS vendes når Mario rammer det. & \\ \hline
 
-\act{Rør: Valgfag, Mario hopper ned i røret}
+  4 & Spectrum & Opgave & Mario hopper på opgaven, som foldes sammen. & \textit{LØFT} \\ \hline
 
-\scene{Lys ned}
+  5 & Heine & ?-boks med ECTS & ECTS gemmes bag boks. Boks holdes stille over Mario, og ECTS popper frem, hver gang Mario slår på kassen. & \\ \hline
 
-\scene{Lys op, ny musik. Mario midt på scenen, ”Protein science”-rør scene venstre og ”Noget på KUA”-rør scene højre}
+  GL & Sara & 3D-rør (Green Lighthouse) & Kommer frem fra røret to gange, før Mario hopper over. & \textit{LØFT} \\ \hline
 
-\act{Mario kikker i "Protein Science"-rør og ryster, kravler ind i ”Noget på KUA”-rør}
+  1 & Valdbjørn & Busk & & \\ \hline
 
-\scene{Lys op, normal Mario musik, ”Noget på KUA”-rør scene højre, scene er fyldt med ECTS skilte, rør uden skilt scene venstre}
+  2 & Nine & ECTS (enkelt) & Mario misser ECTS. & \\ \hline
 
-\act{Mario kravler ud af ”Noget på KUA”-rør}
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9}  \textit{BAGLÆNS} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \\ \hline
 
-\act{Mario finder pibe frem fra lommen og ryger på den, alle ECTS skilte vendes, Mario kravler ud gennem rør scene venstre}
+  1 & Valdbjørn & Busk & & \\ \hline
 
-\scene{Lys ned}
+  2 & Nine & ECTS (enkelt) & Mario vender sig om. Sky og ECTS,
+  der lige er gået over scenen, går over igen i modsatte retning, så Mario kan ”gå tilbage” og få ECTS. Mario vender sig igen til den rigtige retning og Sky + vendt ECTS går den rigtige vej ud. & \\ \hline
 
-\scene{Lys op, normal Mario-musik, rør scene højre}
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \textit{FORLÆNS} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \\ \hline
 
-\act{Mario kravler ud af rør scene højre}
+  C & Steen & & Censor kravler ind og rammer Mario, som bliver lille. Censor ruller ud af scenen. & \\ \hline
 
-\act{Skilte: Sky, busk}
+  3 & Julie & Sky & & \\ \hline
 
-\act{"?" boks, Mario hopper, GT skilt kommer op, Mario griber GT skilt}
+  4 & Spectrum & ECTS (enkelt) højt & Højt ECTS, som Mario ikke kan nå. Han prøver to gange, mens pointet hænger stille, derefter kører ECTS ud. & \textit{LØFT} \\ \hline
 
-\scene{Musik ændres, lys blinker}
+  5 & Heine & Mursten (lille) & & \\ \hline
 
-\act{Mario "løber" meget hurtigt alle skilte farer forbi}
+  1 & Valdbjørn & ?-kasse + kaffekop & Begge ninjaer ind samtidig, og begge venter, så de kan tage deres rekvisit med ud igen.
+  Mario træder op på mursten, rammer ?-boksen. Ud kommer kaffekop som rammer Mario, så Mario bliver stor. Kaffekop vendes. & \\ \hline
 
-\scene{Normal musik, normalt lys}
+  C & Steen & & Censor kravler ind, PAUSE. Bliver ”hoppet på” af Mario, vender sig om på ryggen og bliver sparket ud af Mario. & \textit{LØFT} \\ \hline
 
-\act{Speciale (som boss), Speciale som kaster ildkugler
-Mario hopper over den første ild-kugle, bliver ramt af den næste }
+  2 & Nine & Pauseskilt & Pauseskilt kommer ind sort, vendes lige inden Mario hopper på Censor. Alt fryser. Pauseskilt vendes igen til sort, alt går i gang igen.
+  Pauseskilt går først ud efter Censor er hevet ud. & \\ \hline
 
-\scene{GAME OVER lyd, lys ned}
+  (5/1) & Heine /Valdbjørn & & Hiver Censor ud & \\ \hline
 
-\scene{AV: Video vises på skærmen, hvor Mojo skælder den nye studieleder på MB ud. Jakob sidder med
-et joy-stick i hånden.}
+  3 & Julie & 3D-rør "Protein Science" & & \textit{LØFT} \\ \hline
 
-\says{Mojo}[AV]Mojo: ”Nej nejnej Jakob. Du bliver nødt til at øve dig hvis du vil klare dig som studie-leder”
+  4 & Spectrum & 3D-rør "Noget på KUA" & De to rør kommer ind samtidig. Mario overvejer, hvilket han helst vil ned i, og vælger til sidst at hoppe over ”Protein Science” for at komme ned i ”Noget på KUA”. LYS NED. Rekvisitter tages ud af deres ninjaer. & \textit{LØFT} \\ \hline
+
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \textit{LYS NED} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \\ \hline
+
+    & Sara & Pibe & Giver Mario piben, inden han løftes op. & \\ \hline
+
+  5 & Heine & Loftsrør (2D) med "KUA" påmalet & Kommer ind med rør, der hænger ned fra loftet foran Mario. På røret står ”KUA”. Tages først ud, når lyset går ned igen. & \textit{LØFT} \\ \hline
+
+  1 & Valdbjørn & 2xECTS (mange) & Kommer ind med mange ECTS i hver hånd.
+  Mario kommer ned gennem røret og begynder at ryge pibe, mens ECTS vendes af sig selv, stang for stang, venstre mod højre. Mario kravler ud af højre rør. LYS NED, alle ud. & \\ \hline
+
+  2 & Nine & 2xECTS (mange) & & \\ \hline
+
+  3 & Julie & 2D-rør & Grønt rør der venter i højre side, så Mario kan kravle ud. & \\ \hline
+
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \textit{LYS NED} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \\ \hline
+
+  4 & Spectrum & 3D-rør med trin IND. & Rør ind på scenen, som Mario gemmer sig bag. LYS OP. Mario rejser sig op og hopper (løftes) ud. Heine tager røret med ud med det samme. & \textit{LØFT} \\ \hline
+
+  4 & Spectrum & 3D-rør med trin UD. & & \\ \hline
+
+  5 & Heine & Sky & & \\ \hline
+
+  1 & Valdbjørn & ?-boks med Guldtuborg & Mario hopper op og rammer boksen, Guld Tuborg kommer ud, Mario bunder GT, ninja får den tomme GT og går ud med GT og ?-boks. & \\ \hline
+
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \textit{HURTIGT} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \\ \hline
+
+  2 & Nine & 2 x ECTS (enkelt i hver hånd)& ECTS vendes når Mario rammer dem. & \\ \hline
+
+  3 & Julie & 2 x Busk & & \\ \hline
+
+  4 & Spectrum & 2 x Sky & & \\ \hline
+
+  5 & Heine & Opgave & Mario kan nu løbe igennem Opgaven. & \\ \hline
+
+  1 & Valdbjørn & ?-boks med ECTS & & \\ \hline
+
+  2 & Nine & 2 x ECTS (enkelt i hver hånd)& ECTS vendes når Mario rammer dem. & \\ \hline
+
+  3 & Julie & 2 x Busk & & \\ \hline
+
+  \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \textit{LANGSOMT} & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9} \\ \hline
+
+  4 & Spectrum & Sky & & \\ \hline
+
+  5 & Heine & Busk & & \\ \hline
+
+  1 & Valdbjørn & Bowser/Speciale & Bowser kommer ind fra højre. Kaster med en ildkugle, som Mario hopper over. & \\ \hline
+
+  2 & Nine & Ildkugle & & \textit{LØFT} \\ \hline
+
+  4/5 & Spectrum /Heine & Pigvæg /Fremdriftsreform & Mur med pigge, der kommer ind fra venstre og presser ham ind i Specialet, så han dør. & \\ \hline
+
+  3 & Julie & GAME OVER-skilt & GAME OVER-skilt kommer ind omvendt (sort). Vendes. & \\ \hline
+
+    & & & Fisk starter, lyset går ned, alt og alle ud af scenen. & \\ \hline
+
+\end{longtable}
 
 
 \end{sketch}
